@@ -1,9 +1,6 @@
 package dao;
 
-import entietis.Concerto;
-import entietis.Evento;
-import entietis.PartitaDiCalcio;
-import entietis.TipoGenere;
+import entietis.*;
 import jakarta.persistence.*;
 
 import java.util.List;
@@ -73,6 +70,17 @@ public  List<PartitaDiCalcio> getPartiteVinteFuoriCasa(){
     }
 public  List<PartitaDiCalcio> getPartitePareggiate(){
         Query q = em.createNamedQuery("getPartitePareggiate");
+        return q.getResultList();
+    }
+
+    public List<GaraDiAtletica> getGareDiAtleticaPerVincitore(Persona p){
+        Query q = em.createNamedQuery("getGareDiAtleticaPerVincitore");
+        q.setParameter("vincitore", p);
+        return q.getResultList();
+    }
+    public List<GaraDiAtletica> getGareDiAtleticaPerPartecipante(Persona p){
+        Query q = em.createNamedQuery("getGareDiAtleticaPerPartecipante");
+        q.setParameter("partecipante", p);
         return q.getResultList();
     }
 

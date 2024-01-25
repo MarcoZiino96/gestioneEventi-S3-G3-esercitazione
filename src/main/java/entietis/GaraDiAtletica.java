@@ -7,6 +7,8 @@ import java.util.Set;
 
  @Entity
  @Table(name="gara_di_atletica")
+ @NamedQuery(name = "getGareDiAtleticaPerVincitore", query="select c from GaraDiAtletica c where c.vincitore = :vincitore")
+ @NamedQuery(name = "getGareDiAtleticaPerPartecipante", query="select c from GaraDiAtletica c where :partecipante member of c.atleti")
 public class GaraDiAtletica extends Evento {
 
     @Column(name="atleti_in_gara")

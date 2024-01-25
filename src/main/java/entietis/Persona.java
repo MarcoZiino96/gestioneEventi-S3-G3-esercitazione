@@ -16,8 +16,11 @@ public class Persona {
     private int id;
 
     private String nome;
+
     private String cognome;
+
     private String Email;
+
     @Column(name ="data_nascita")
     private LocalDate dataNascita;
 
