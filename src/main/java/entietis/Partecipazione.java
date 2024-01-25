@@ -4,7 +4,7 @@ package entietis;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name="partexipazione")
+@Table(name="partecipazione")
 
 public class Partecipazione {
 
@@ -13,7 +13,10 @@ public class Partecipazione {
 
     @ManyToOne
     @JoinColumn(name = "evento_fk")
+
     private Evento evento;
+
+    @Enumerated(EnumType.STRING)
     private TipoStato stato;
     @ManyToOne
     @JoinColumn(name = "persona_fk")
@@ -26,7 +29,7 @@ public class Partecipazione {
                 "id=" + id +
                 ", evento=" + evento +
                 ", stato=" + stato +
-                ", persona=" + persona +
+                ", persona=" + persona.getId() +
                 '}';
     }
 

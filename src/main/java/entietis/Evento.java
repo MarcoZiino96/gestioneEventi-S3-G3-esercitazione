@@ -5,12 +5,13 @@ import java.util.List;
 
 @Entity
 @Table(name="evento")
+@Inheritance(strategy = InheritanceType.JOINED)
 public class Evento {
 
         @Id@GeneratedValue(strategy = GenerationType.AUTO)
         private int id;
         private String titolo;
-        @Column(name ="data_evento", nullable = false)
+        @Column(name ="data_evento")
         private LocalDate dataEvento;
         private String descrizione;
         @Column(name="tipo_evento")
@@ -18,14 +19,23 @@ public class Evento {
         private TipoEvento tipoEvento;
         @Column(name="numero_massimo_partecipanti")
         private int NumeroMassimoPartecipanti;
-        @Embedded
-        private Location Location;
 
-        @OneToMany(mappedBy = "evento")
+        @ManyToOne
+        @JoinColumn(name="location_fk")
+        private Location location;
+
+        @OneToMany(mappedBy = "evento",cascade = CascadeType.REMOVE)
         private List<Partecipazione>partecipazioni;
 
+    public List<Partecipazione> getPartecipazioni() {
+        return partecipazioni;
+    }
 
-        public Evento(){};
+    public void setPartecipazioni(List<Partecipazione> partecipazioni) {
+        this.partecipazioni = partecipazioni;
+    }
+
+    public Evento(){};
 
         public Evento(String titolo, LocalDate dataEvento, String descrizione, TipoEvento tipoEvento, int numeroMassimoPartecipanti) {
             this.titolo = titolo;

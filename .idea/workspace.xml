@@ -4,27 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea8b4060-cff3-4c9a-8287-0e6ea24e7a86" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MainGestioneEvento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/EventoDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/LocationDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/PartecipazioneDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/PersonaDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entietis/Evento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entietis/Location.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entietis/Partecipazione.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entietis/Persona.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entietis/TipoEvento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entietis/TipoSesso.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entietis/TipoStato.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+    <list default="true" id="ea8b4060-cff3-4c9a-8287-0e6ea24e7a86" name="Changes" comment="consegna esercitazione s3g3">
+      <change afterPath="$PROJECT_DIR$/src/main/java/entietis/Concerto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entietis/GaraDiAtletica.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entietis/PartitaDiCalcio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entietis/TipoGenere.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainGestioneEvento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainGestioneEvento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/EventoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/EventoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/LocationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/LocationDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/PartecipazioneDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/PartecipazioneDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/PersonaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/PersonaDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entietis/Evento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entietis/Evento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entietis/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entietis/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entietis/Partecipazione.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entietis/Partecipazione.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entietis/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entietis/Persona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,17 +30,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2bP3ufPJqg0mI1iHVutnZqrcKLt" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -59,7 +55,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Marco/OneDrive/Desktop/gestioneEventi-S3-G3/src/main/resources",
+    "last_opened_file_path": "C:/Users/Marco/OneDrive/Desktop/teoriaEsempiBackEnd/S3-g1-g2-g3/teoria_week3_day2",
     "onboarding.tips.debug.path": "C:/Users/Marco/OneDrive/Desktop/gestioneEventi-S3-G3/src/main/java/org/example/Main.java"
   }
 }]]></component>
@@ -67,6 +63,13 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Marco\OneDrive\Desktop\gestioneEventi-S3-G3\src\main\resources" />
     </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-f644763e9732-f98dd351" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -77,7 +80,20 @@
       <option name="presentableId" value="Default" />
       <updated>1706103114035</updated>
     </task>
+    <task id="LOCAL-00001" summary="consegna esercitazione s3g3">
+      <option name="closed" value="true" />
+      <created>1706111234414</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1706111234414</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="consegna esercitazione s3g3" />
+    <option name="LAST_COMMIT_MESSAGE" value="consegna esercitazione s3g3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

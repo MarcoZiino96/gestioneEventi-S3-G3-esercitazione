@@ -18,9 +18,13 @@ public class Persona {
     private String Email;
     @Column(name ="data_nascita")
     private LocalDate dataNascita;
+
+    @ManyToOne
+    @JoinColumn(name = "gara_di_atletica_fk")
+    private GaraDiAtletica atleta;
+    @Enumerated(EnumType.STRING)
     private TipoSesso sesso;
     @OneToMany(mappedBy = "persona")
-    @OrderBy("dataEvento")
     private List<Partecipazione> partecipazioni;
 public Persona(){}
 

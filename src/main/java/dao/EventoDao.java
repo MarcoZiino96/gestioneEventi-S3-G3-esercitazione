@@ -12,7 +12,7 @@ public class EventoDao {
     private EntityManager em;
 
     public EventoDao(){
-        emf = Persistence.createEntityManagerFactory("gestione_eventi");
+        emf = Persistence.createEntityManagerFactory("gestione_eventi_new");
         em = emf.createEntityManager();
     }
 

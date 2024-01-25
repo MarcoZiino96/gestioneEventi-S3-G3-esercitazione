@@ -1,12 +1,21 @@
 package entietis;
 
-import jakarta.persistence.Embeddable;
+import jakarta.persistence.*;
 
-@Embeddable
+import java.util.List;
+
+@Entity
+@Table(name="location")
 public class Location {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     private String nome;
     private String citta;
+
+    @OneToMany(mappedBy = "location")
+    private List<Evento> eventi;
     public Location(){}
 
     @Override
@@ -18,8 +27,7 @@ public class Location {
                 '}';
     }
 
-    public Location(int id, String nome, String citta) {
-        this.id = id;
+    public Location( String nome, String citta) {
         this.nome = nome;
         this.citta = citta;
     }

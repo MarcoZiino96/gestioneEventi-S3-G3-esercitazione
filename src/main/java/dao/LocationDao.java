@@ -11,7 +11,7 @@ public class LocationDao {
     private EntityManager em;
 
     public LocationDao(){
-        emf = Persistence.createEntityManagerFactory("gestione_eventi");
+        emf = Persistence.createEntityManagerFactory("gestione_eventi_new");
         em = emf.createEntityManager();
     }
 

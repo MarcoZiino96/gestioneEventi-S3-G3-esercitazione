@@ -11,7 +11,7 @@ public class PartecipazioneDao {
     private EntityManager em;
 
     public PartecipazioneDao(){
-        emf = Persistence.createEntityManagerFactory("gestione_eventi");
+        emf = Persistence.createEntityManagerFactory("gestione_eventi_new");
         em = emf.createEntityManager();
     }
 

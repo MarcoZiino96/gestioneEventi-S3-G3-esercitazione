@@ -12,7 +12,7 @@ public class PersonaDao {
     private EntityManager em;
 
     public PersonaDao(){
-        emf = Persistence.createEntityManagerFactory("gestione_eventi");
+        emf = Persistence.createEntityManagerFactory("gestione_eventi_new");
         em = emf.createEntityManager();
     }
 
