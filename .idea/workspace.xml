@@ -4,23 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea8b4060-cff3-4c9a-8287-0e6ea24e7a86" name="Changes" comment="consegna esercitazione s3g3">
-      <change afterPath="$PROJECT_DIR$/src/main/java/entietis/Concerto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entietis/GaraDiAtletica.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entietis/PartitaDiCalcio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entietis/TipoGenere.java" afterDir="false" />
+    <list default="true" id="ea8b4060-cff3-4c9a-8287-0e6ea24e7a86" name="Changes" comment="consegna esercitazione s3g4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MainGestioneEvento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainGestioneEvento.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/EventoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/EventoDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/LocationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/LocationDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/PartecipazioneDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/PartecipazioneDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/PersonaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/PersonaDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entietis/Concerto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entietis/Concerto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/entietis/Evento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entietis/Evento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entietis/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entietis/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entietis/Partecipazione.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entietis/Partecipazione.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entietis/GaraDiAtletica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entietis/GaraDiAtletica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entietis/PartitaDiCalcio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entietis/PartitaDiCalcio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/entietis/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entietis/Persona.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,12 +80,21 @@
       <option name="project" value="LOCAL" />
       <updated>1706111234414</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="consegna esercitazione s3g4">
+      <option name="closed" value="true" />
+      <created>1706198100436</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1706198100436</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="consegna esercitazione s3g3" />
-    <option name="LAST_COMMIT_MESSAGE" value="consegna esercitazione s3g3" />
+    <MESSAGE value="consegna esercitazione s3g4" />
+    <option name="LAST_COMMIT_MESSAGE" value="consegna esercitazione s3g4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

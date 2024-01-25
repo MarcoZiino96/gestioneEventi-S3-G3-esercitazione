@@ -10,46 +10,36 @@ import java.util.Set;
 public class GaraDiAtletica extends Evento {
 
     @Column(name="atleti_in_gara")
-    @OneToMany(mappedBy = "atleta")
-    private Set<Persona> atletiInGara;
+    @ManyToMany (mappedBy = "gare")
+    private Set<Persona> atleti;
 
+
+    @ManyToOne
+    @JoinColumn(name="vincitore_fk")
     private Persona vincitore;
 
 
     public GaraDiAtletica(){}
 
-    public Set<Persona> getAtletiInGara() {
-        return atletiInGara;
-    }
+     public GaraDiAtletica(String titolo, LocalDate dataEvento, String descrizione, TipoEvento tipoEvento, int numeroMassimoPartecipanti, Set<Persona> atleti, Persona vincitore) {
+         super(titolo, dataEvento, descrizione, tipoEvento, numeroMassimoPartecipanti);
+         this.atleti = atleti;
+         this.vincitore = vincitore;
+     }
 
-    @Override
-    public String toString() {
-        return "GaraDiAtletica{" +
-                "atletiInGara=" + atletiInGara +
-                ", vincitore=" + vincitore +
-                '}';
-    }
+     public Set<Persona> getAtleti() {
+         return atleti;
+     }
 
-    public void setAtletiInGara(Set<Persona> atletiInGara) {
-        this.atletiInGara = atletiInGara;
-    }
+     public void setAtleti(Set<Persona> atleti) {
+         this.atleti = atleti;
+     }
 
-    public Persona getVincitore() {
-        return vincitore;
-    }
+     public Persona getVincitore() {
+         return vincitore;
+     }
 
-    public void setVincitore(Persona vincitore) {
-        this.vincitore = vincitore;
-    }
-
-    public GaraDiAtletica(Set<Persona> atletiInGara, Persona vincitore) {
-        this.atletiInGara = atletiInGara;
-        this.vincitore = vincitore;
-    }
-
-    public GaraDiAtletica(String titolo, LocalDate dataEvento, String descrizione, TipoEvento tipoEvento, int numeroMassimoPartecipanti, Set<Persona> atletiInGara, Persona vincitore) {
-        super(titolo, dataEvento, descrizione, tipoEvento, numeroMassimoPartecipanti);
-        this.atletiInGara = atletiInGara;
-        this.vincitore = vincitore;
-    }
-}
+     public void setVincitore(Persona vincitore) {
+         this.vincitore = vincitore;
+     }
+ }

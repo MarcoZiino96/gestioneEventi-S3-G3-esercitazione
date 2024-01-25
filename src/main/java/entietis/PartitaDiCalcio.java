@@ -3,12 +3,17 @@ package entietis;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.NamedQuery;
 import jakarta.persistence.Table;
 
 import java.time.LocalDate;
 
 @Entity
 @Table(name="partita_di_calcio")
+@NamedQuery(name="getPartiteVinteCasa", query="select p from PartitaDiCalcio p where p.numeroGolCasa>p.numeroGolOspite")
+@NamedQuery(name="getPartiteVinteFuoriCasa", query="select p from PartitaDiCalcio p where p.numeroGolOspite>p.numeroGolCasa")
+@NamedQuery(name="getPartitePareggiate", query = "select p from PartitaDiCalcio p where p.squadraVincente is null")
+
 public class PartitaDiCalcio  extends Evento{
 
     @Column(name = "squadra_casa")
@@ -16,7 +21,7 @@ public class PartitaDiCalcio  extends Evento{
     @Column(name = "squadra_ospite")
     private String squadraOspite;
 
-    @Column(name="saquadra_vincente")
+    @Column(name="squadra_vincente")
     private String squadraVincente;
 
     @Column(name="numero_gol_casa")

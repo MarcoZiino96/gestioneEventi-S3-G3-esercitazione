@@ -1,10 +1,12 @@
 package dao;
 
+import entietis.Concerto;
 import entietis.Evento;
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.EntityManagerFactory;
-import jakarta.persistence.EntityTransaction;
-import jakarta.persistence.Persistence;
+import entietis.PartitaDiCalcio;
+import entietis.TipoGenere;
+import jakarta.persistence.*;
+
+import java.util.List;
 
 public class EventoDao {
 
@@ -48,4 +50,30 @@ public class EventoDao {
             em.close();
         }
     }
+
+    public List<Concerto> getConcertiInStreming(Boolean tipo){
+    Query q = em.createNamedQuery("getConcertiInStreming");
+    q.setParameter("tipo", tipo);
+    return q.getResultList();
+}
+
+public List<Concerto> getConcertiPerGenere(TipoGenere genere){
+        Query q =em.createNamedQuery("getConcertiPerGenere");
+        q.setParameter("genere",genere);
+        return q.getResultList();
+}
+
+public  List<PartitaDiCalcio> getPartiteVinteCasa(){
+        Query q = em.createNamedQuery("getPartiteVinteCasa");
+        return q.getResultList();
+}
+public  List<PartitaDiCalcio> getPartiteVinteFuoriCasa(){
+        Query q = em.createNamedQuery("getPartiteVinteFuoriCasa");
+        return q.getResultList();
+    }
+public  List<PartitaDiCalcio> getPartitePareggiate(){
+        Query q = em.createNamedQuery("getPartitePareggiate");
+        return q.getResultList();
+    }
+
 }

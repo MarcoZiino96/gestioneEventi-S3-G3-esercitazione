@@ -3,7 +3,9 @@ package entietis;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table(name ="persona")
@@ -19,13 +21,35 @@ public class Persona {
     @Column(name ="data_nascita")
     private LocalDate dataNascita;
 
-    @ManyToOne
-    @JoinColumn(name = "gara_di_atletica_fk")
-    private GaraDiAtletica atleta;
+    @ManyToMany
+    @JoinTable(name = "persone_gare",
+            joinColumns = @JoinColumn(name="persona_fk"),
+            inverseJoinColumns = @JoinColumn(name="gara_fk"))
+    private Set<GaraDiAtletica> gare = new HashSet<>();
     @Enumerated(EnumType.STRING)
     private TipoSesso sesso;
     @OneToMany(mappedBy = "persona")
     private List<Partecipazione> partecipazioni;
+    @OneToMany(mappedBy = "vincitore")
+    List<GaraDiAtletica> gareVinte;
+
+    public Set<GaraDiAtletica> getGare() {
+        return gare;
+    }
+
+    public void setGare(Set<GaraDiAtletica> gare) {
+        this.gare = gare;
+    }
+
+    public List<GaraDiAtletica> getGareVinte() {
+        return gareVinte;
+    }
+
+    public void setGareVinte(List<GaraDiAtletica> gareVinte) {
+        this.gareVinte = gareVinte;
+    }
+
+
 public Persona(){}
 
     public Persona(String nome, String cognome, String email, LocalDate dataNascita, TipoSesso sesso) {

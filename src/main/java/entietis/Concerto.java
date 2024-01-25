@@ -6,6 +6,8 @@ import java.time.LocalDate;
 
 @Entity
 @Table(name="concerto")
+@NamedQuery(name = "getConcertiInStreming", query= "select c from Concerto c where c.inStreming=:tipo")
+@NamedQuery(name ="getConcertiPerGenere", query=" select c from Concerto c where c.genere=:genere")
 public class Concerto extends Evento{
 
     @Enumerated(EnumType.STRING)
